@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}详情{% endblock %}
+{% block content %}
+
+    <h1 class="top">{{ article.title }}</h1>
+    <div class="article_bar clearfix">
+        <div class="artical_tag">
+            <span class="original">原创</span>
+            <span class="time">{{ article.date_publish }}</span>
+        </div>
+        <ul class="article_tags clearfix csdn-tracking-statistics tracking-click">
+            <li class="tit">标签</li>
+            {% for tag in article.tag.values_list %}
+                <li>
+                    <a>{{ tag | truncatewords:"2" }}</a>
+                    <span></span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="article_content">
+        <div class="markdown_views">
+            <p>{{ article.content }}</p>
+        </div>
+    </div>
+    {# 评论开始 #}
+    <div class="comment_class">
+        <div class="panel_head">
+            <span class="see_comment">查看评论</span>
+            <a name="comments"></a>
+        </div>
+        <div id="comment_list">
+            <ul>
+                {% for comment in comment_list %}
+                    <li>
+                        {#                <p>{{ comment.content }}</p>#}
+                        <div class="comment_item comment_topic">
+                            <p class="comment_head">
+                        <span class="user">
+                            <a class="username" href="" target="_blank">{{ comment.user }}</a>
+                            <span class="ptime">{{ comment.date_publish | date:'Y-m-d H:i:s' }}</span>
+                            <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a>
+                            <span class="comment_manage" style="display: none;" commentid="7468247">
+                                <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a>
+                                <a href="#report" class="cmt_btn report" title="举报">[举报]</a>
+                            </span>
+                        </span>
+                            </p>
+                            <div class="comment_body">
+                                <p>{{ comment.content }}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {% for childre_comment in comment.children_comment %}
+                        <li>
+                            <div class="reply">
+                                <div class="top"><a rel="external nofollow"
+                                                    class="url">{{ children_comment.username }}</a>
+                                    <span class="time"><a
+                                            title="">{{ children_comment.date_publish | date:'Y-m-d H:i:s' }}</a></span>
+                                </div>
+
+                                <div class="body">
+                                    {{ children_comment.content }}
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                {% endfor %}
+
+                <li class="clear"></li>
+                <li id="comment_bar"></li>
+            </ul>
+        </div>
+        <div id="comment_form">
+            {% if request.session.is_login %}
+                <div class="guest_link"><b>{{ request.session.username }}</b>,快来写点评论吧!&nbsp;
+                    <a href="{% url 'blog:logout' %}">注销</a></div>
+                <form action="{% url 'blog:comment_post' %}" method="post">
+                    {% csrf_token %}
+                    <li class="form-group">
+                        <label for="content">评论:</label>
+                        {{ comment_form.content }}
+                    </li>
+
+                    <li class="form-group">
+                        <input name="submit" type="submit" id="submit" value="添加评论"/>
+                    </li>
+
+                </form>
+            {% else %}
+                <div class="guest_link">
+                    您还没登录，请<a href="{% url 'blog:login' %}">[登录]</a>或<a href="{% url 'blog:register' %}">[注册]</a>
+                </div>
+            {% endif %}
+
+        </div>
+        <div class="announce">
+            * 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场
+            <a name="reply"></a>
+            <a name="quote"></a>
+        </div>
+    </div>
+    {# 评论结束 #}
+{% endblock %}

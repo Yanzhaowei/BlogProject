@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}关于我{% endblock %}
+{% block content %}
+    <article class="article">
+        <h1><a href="https://www.biaodianfu.com/about" title="AboutMe" alt="AboutMe">AboutMe</a></h1>
+        <div class="content">
+            <p><strong>关于本人：</strong></p>
+            <p>网名：绝地反击</p>
+            <p>现就职于atguigu，做过web后台开发，做过数据挖掘，捎带数据分析</p>
+            <p>如本博客的相关内容侵犯了你的权利，请发邮件至邮箱。</p>
+            <p>联系邮箱：<img class="alignnone size-full wp-image-734" title="email" src="{% static 'images/emial.jpg' %}" alt="email" width="181" height="22"></p>
+            <p><strong>关于本站：</strong></p>
+            <p>本站主要涉及内容为对自己看到的互联网知识的总结，有些内容很可能引用了你的观点，但没有注明出处，请未注明出处的朋友发邮件至我邮箱。</p>
+            <div class="article-copyright"><i class="fa fa-share-alt"></i> 码字很辛苦，转载请注明来自<b>
+                <a href="">绝地反击</a></b>的<a href="https://www.github.com/about">关于我</a>
+            </div>
+        </div>
+        <div class="article-info">
+            <i class="fa fa-calendar"></i> 2015-09-06 &nbsp;
+            <i class="fa fa-folder-open"></i>&nbsp;
+            <i class="fa fa-tags"></i>
+		</div>
+    </article>
+{% endblock %}
+{% block footer %}{% endblock %}

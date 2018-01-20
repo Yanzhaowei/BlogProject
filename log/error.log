@@ -1,0 +1,56 @@
+2017-12-28 22:18:21,413 [Thread-5:9736] [blog.views:127] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-28 22:23:37,787 [Thread-6:9752] [blog.views:127] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-28 22:24:49,001 [Thread-8:3064] [blog.views:127] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-28 22:38:44,458 [Thread-37:9740] [blog.views:127] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-28 22:39:57,075 [Thread-38:3144] [blog.views:127] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-28 22:40:18,785 [Thread-44:5712] [blog.views:127] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-28 22:40:38,603 [Thread-52:2804] [blog.views:127] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-29 08:38:12,287 [Thread-106:5436] [blog.views:136] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-29 08:47:04,546 [Thread-2:7720] [blog.views:141] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-29 08:49:04,216 [Thread-2:8296] [blog.views:142] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-29 08:52:16,784 [Thread-2:2428] [blog.views:58] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-29 08:52:19,659 [Thread-3:1136] [blog.views:58] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-29 08:52:23,984 [Thread-29:9452] [blog.views:58] [views:archive] [ERROR]- Unsupported lookup 'icoantains' for DateTimeField or join on the field not permitted.
+2017-12-29 13:39:41,890 [Thread-69:1856] [blog.views:75] [views:article_detail] [ERROR]- Invalid filter: 'month_to_upper'
+2017-12-29 13:40:40,682 [Thread-75:4668] [blog.views:75] [views:article_detail] [ERROR]- Invalid filter: 'month_to_upper'
+2017-12-30 09:24:06,191 [Thread-2:11448] [blog.views:78] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 09:24:26,170 [Thread-35:88] [blog.views:78] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 09:25:00,146 [Thread-2:2152] [blog.views:78] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 09:25:38,636 [Thread-2:12428] [blog.views:76] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 09:26:02,507 [Thread-2:6600] [blog.views:76] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 09:30:13,352 [Thread-8:12196] [blog.views:76] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 09:30:23,378 [Thread-2:12832] [blog.views:76] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:07:34,667 [Thread-40:12232] [blog.views:77] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:08:07,583 [Thread-41:7148] [blog.views:77] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:08:11,085 [Thread-42:11376] [blog.views:77] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:09:40,332 [Thread-48:11604] [blog.views:77] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:35:13,570 [Thread-2:1532] [blog.views:78] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:39:15,958 [Thread-2:4628] [blog.views:78] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:48:17,342 [Thread-2:12304] [blog.views:85] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:49:34,915 [Thread-4:8928] [blog.views:85] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:52:18,837 [Thread-2:8716] [blog.views:82] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:53:57,219 [Thread-6:11620] [blog.views:82] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:56:59,151 [Thread-2:3148] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 10:59:25,504 [Thread-24:4592] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:00:30,336 [Thread-2:1084] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:12:59,481 [Thread-24:11104] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:14:12,576 [Thread-3:12584] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:16:27,115 [Thread-25:13240] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:19:52,552 [Thread-47:10940] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:24:05,913 [Thread-2:9596] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:26:19,025 [Thread-2:1480] [blog.views:80] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:36:56,702 [Thread-2:13056] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:37:14,070 [Thread-2:12196] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:37:26,707 [Thread-52:12148] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:38:07,265 [Thread-112:10176] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:38:20,826 [Thread-135:13064] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:52:40,001 [Thread-2:5804] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:54:59,320 [Thread-24:5440] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:55:48,236 [Thread-2:12552] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:57:48,047 [Thread-24:10372] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 11:58:36,768 [Thread-46:12824] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 12:00:54,271 [Thread-68:4952] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 12:00:57,447 [Thread-90:2292] [blog.views:92] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 12:01:48,082 [Thread-2:5036] [blog.views:93] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 12:02:10,854 [Thread-2:11200] [blog.views:93] [views:article_detail] [ERROR]- order_by() got an unexpected keyword argument 'id'
+2017-12-30 12:46:13,340 [Thread-2:3948] [blog.views:94] [views:article_detail] [ERROR]- 'Comment' object is not iterable

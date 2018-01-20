@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <article>
+        <div class="l_box f_l">
+            <div class="topnews">
+                <h2>{{ request.GET.year }}/{{ request.GET.month }}文章归档</h2>
+                <div class="blogs">
+                    <ul>
+                        {% for article in context %}
+                            <li>
+                                <h3><a href="{% url 'blog:detail' article.id %}">{{ article.title }}</a></h3>
+                                <p>{{ article.desc }}</p>
+                                <p class="autor">
+                                    <span class="lm f_l">
+                                    {% for tag in article.tag.all %}
+                                        <a href="/">{{ tag.name }}</a>
+                                    &nbsp;</span>
+                                    {% endfor %}
+                                    <span class="dtime f_l">{{ article.date_publish | date:'Y-m-d' }}</span>
+                                    <span class="viewnum f_r">浏览（<a href="/">{{ article.click_count }}</a>）</span>
+                                    <span class="pingl f_r">评论（<a href="/">{{ article.comment_set.all.count }}</a>）</span>
+                                </p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <!-- 分页开始 -->
+            {% include 'myblog/pagination.html' %}
+            <!-- 分页代码 结束 -->
+        </div>
+    </article>
+{% endblock %}

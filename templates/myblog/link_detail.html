@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}链接详情{% endblock %}
+{% block content %}
+    <h1 class="top">{{ links_detail.title }}</h1>
+    <div class="article_bar clearfix">
+        <div class="artical_tag">
+            <span class="original">原创</span>
+            <span class="time">{{ links_detail.date_publish | date:'Y-m-d' }}</span>
+        </div>
+    </div>
+    <div class="article_content">
+        <div class="markdown_views">
+            <p>{{ links_detail.description }}</p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+/* 注册、登陆页面 */
+.register_con{
+	width:700px;
+	height:560px;
+	margin:50px auto 0;
+	/*background-color:#4277ad;*/
+}
+
+.reg_title h2{height:50px;line-height:50px;font-size:24px;color:#a8a8a8;font-weight:bold;}
+/*.reg_title a{float:right;height:20px;line-height:20px;font-size:16px;color:#4277ad;padding-right:20px;background:url(../images/icons02.png) 35px 3px no-repeat;margin-top:15px}*/
+
+.reg_form li{height:70px;, disply: None}
+.reg_form li label{width:70px;height:40px;line-height:40px;float:left;font-size:12px;color:#a8a8a8}
+.reg_form li input{width:288px;height:38px;border:1px solid #e0e0e0;float:left;outline:none;text-indent:10px;background-color:#f8f8f8}
+.reg_form li.agreement input{width:15px;height:15px;float:left;margin-top:13px}
+.reg_form li.agreement label{width:300px;float:left;margin-left:10px;}
+.reg_form li.reg_sub input{width:360px;height:40px;background-color:#4277ad;font-size:18px;color:#fff;font-family:'Microsoft Yahei';cursor:pointer;}
+.reg_form li .error_tip{float:left;height:30px;line-height:30px;margin-left:70px;color:#e62e2e;display:none;}
+.reg_form li .error_tip2{float:left;height:20px;line-height:20px;color:#e62e2e;display:none;}
